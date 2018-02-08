@@ -42,12 +42,12 @@ body {
 /* css for jobs.html */
 
 .new_job_sub_box {
-	display: flex;
-	flex-direction: column;
+	text-align: center;
 	margin: 0px 0px 0px 50px;
 }
 
-.new_job_sub_box input {
+.new_job_sub_box > input {
+	text-align: center;
 	width: 200px;
 }
 
@@ -60,7 +60,7 @@ body {
 button {
 	text-decoration: none;
 	padding: 20px 40px;
-	margin: 0px 10px;
+	margin: 20px 10px;
 	font-size: 1em;
 } 
 
