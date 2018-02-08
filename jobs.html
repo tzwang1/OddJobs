@@ -4,6 +4,7 @@
 	<title>Odd Jobs</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="main.js"></script>
 </head>
 <body>
 	<div id="nav_bar">
@@ -12,16 +13,18 @@
 		<a href="profile.html">Profile</a>
 		<a href="login.html">Login</a></li>
 	</div>
-	<div class="new_job_sub_box">
-		<div>Job Title</div>
-		<input>
-		<div>Job Description</div>
-		<input>
-		<div>Job Tags</div>
+	<div class="job_box_area">
 		<div class="job_buttons">
-			<button>New Job</button>
+			<button onClick="show_new_job_text_box()">New Job</button>
 			<button>Browse Jobs</button>
 		</div>
+		<div id="new_job_sub_box">
+		<div>Job Title</div>
+		<input id="job_title">
+		<div>Job Description</div>
+		<input id="job_description">
+		<div>Job Tags</div>
+		<button onClick="submit_new_job()">Submit Job</button>
 	</div>
 </body>
 </html>
