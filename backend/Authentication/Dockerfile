@@ -11,8 +11,5 @@ RUN pip install -r requirements.txt
 # add app
 COPY . /usr/src/app
 
-# run tests
-RUN pytest tests/test-app.py
-
 # run server
 CMD python app.py
