@@ -31,9 +31,9 @@ def test_index(odd_jobs_app):
     assert response.data == b'Hello World!'
 
 def test_create_user(odd_jobs_app, user_data):
-    response = odd_jobs_app.post('/user', data=user_data)
+    response = odd_jobs_app.post('/user', json=user_data)
     assert response.status_code == 200
-    assert response.data == b'User was created'
+    assert response.data == b'User was created.'
 
 
 

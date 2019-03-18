@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-def init_db():
+def get_db():
     try:
         client = MongoClient('localhost', 27017)
         odd_jobs_db = client['odd_jobs']
