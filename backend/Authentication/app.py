@@ -12,6 +12,11 @@ def get_user(id):
 
 @app.route('/user', methods=['POST'])
 def post_user():
+    print(request.form)
+    username = request.form['username']
+    password = request.form['password']
+    email = request.form['email']
+
     return 'User was created'
 
 if __name__=="__main__":
