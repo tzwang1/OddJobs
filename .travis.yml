@@ -4,13 +4,13 @@ matrix:
       python:
         - "3.6"
       
-      # Change into backend/Authentication directory
+      # Steps before running script
       before_script:
-        - cd backend
+        - cd .
 
       # command to install dependencies
       install:
         - pip install -r backend/requirements.txt
       # command to run tests
       script:
-        - pytest tests/test_app.py
+        - pytest backend/tests/test_app.py

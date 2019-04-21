@@ -15,7 +15,8 @@ def get_user(email):
 
 @app.route('/user', methods=['POST'])
 def post_user():
-    if not request.json or 'username' not in request.json or 'password' not in request.json or 'email' not in request.json:
+    request_json = request.get_json()
+    if not request_json or 'username' not in request_json or 'password' not in request_json or 'email' not in request_json:
         abort(400)
     
     user_data = {
