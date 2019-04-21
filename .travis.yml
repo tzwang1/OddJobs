@@ -6,11 +6,11 @@ matrix:
       
       # Change into backend/Authentication directory
       before_script:
-        - cd backend/Authentication
+        - cd backend
 
       # command to install dependencies
       install:
-        - pip install -r backend/Authentication/requirements.txt
+        - pip install -r backend/requirements.txt
       # command to run tests
       script:
         - pytest tests/test-app.py

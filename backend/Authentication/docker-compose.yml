@@ -1,6 +1,0 @@
-version: "3"
-services:
-  odd_jobs_auth:
-    build: .
-    ports: ['80:80']
-    volumes: ['.:/usr/src/app']
