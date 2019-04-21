@@ -1,0 +1,16 @@
+.Header {
+    display: table;
+    flex-direction: row;
+}
+
+.menu_items {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding: 16px;
+}

@@ -1,0 +1,11 @@
+.job_details {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding: 8px;
+}

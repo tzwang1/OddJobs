@@ -13,4 +13,4 @@ matrix:
         - pip install -r backend/requirements.txt
       # command to run tests
       script:
-        - pytest tests/test-app.py
+        - pytest tests/test_app.py
